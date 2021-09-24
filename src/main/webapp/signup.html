@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+
+</head>
+<style>  
+    body{  
+      font-family: Calibri, Helvetica, sans-serif;  
+      background-color: rgb(160, 108, 228);  
+    }  
+    .container {  
+        padding: 50px;  
+      background-color: #f4A950;  
+    }  
+      
+    input[type=text], input[type=password], textarea {  
+      width: 100%;  
+      padding: 15px;  
+      margin: 5px 0 22px 0;  
+      display: inline-block;  
+      border: none;  
+      background: #f1f1f1;  
+    }  
+    input[type=number], input[type=number], textarea {  
+      width: 100%;  
+      padding: 15px;  
+      margin: 5px 0 22px 0;  
+      display: inline-block;  
+      border: none;  
+      background: #f1f1f1;  
+    } 
+    input[type=tel], input[type=tel], textarea {  
+      width: 100%;  
+      padding: 15px;  
+      margin: 5px 0 22px 0;  
+      display: inline-block;  
+      border: none;  
+      background: #f1f1f1;  
+    } 
+    input[type=email], input[type=number], textarea {  
+      width: 100%;  
+      padding: 15px;  
+      margin: 5px 0 22px 0;  
+      display: inline-block;  
+      border: none;  
+      background: #f1f1f1;  
+    } 
+    input[type=text]:focus, input[type=password]:focus {  
+      
+      outline: none;  
+    }  
+     div {  
+                padding: 10px 0;  
+             }  
+    hr {  
+      border: 1px solid #f1f1f1;  
+      margin-bottom: 25px;  
+    }  
+    .Register,.Reset {  
+      background-color: #4CAF50;  
+      color: white;  
+      padding: 16px 20px;  
+      margin: 8px 0;  
+      border: none;  
+      cursor: pointer;  
+      width: 100%;  
+      opacity: 0.9;  
+    }  
+    .Register:hover,.Reset:hover {  
+      opacity: 1;  
+    } 
+     
+    </style> 
+<body>  
+  <form action="http://localhost:8080/EmployeeReimbursementApp/SignupServlet" method="GET">
+      <div class="container">  
+      <center>  <h1>Registration Form  :ERS Application</h1> </center>  
+      <hr>  
+      <label> First Name </label>   
+    <Input id="fname" type="text" name="firstName" placeholder="Enter your first name" required>   
+      <label> Last Name </label>   
+      <Input id="lname" type="text" name="lastName" placeholder="Enter your last name" required>      
+    <label> Date of Birth </label>    
+    <input id="dob" type="date" name="dateOfBirth" required> <br>  
+    <label> Age</label>   
+    <input id="age" type="number" name="age" placeholder="Enter your age" required> 
+    <div>  
+    <label>   
+    Gender :  
+    </label><br>  
+    <input type="radio" value="Male" name="radioGender" checked > Male 
+    <input type="radio" value="Female" name="radioGender" > Female
+    </div>  
+    <label for="email"><b>Email</b></label>  
+    <input type="email" placeholder="Enter Email" name="email" required>  
+    <label> Contact Number</label>   
+    <input id="phoneNo" type="tel" name="contactNo"	placeholder="Enter your contact number" required>
+    <label> Address</label>   
+    <textarea id="address" rows="5" cols="50" name="address" placeholder="Enter your address" required></textarea>
+    <label> Employee Type</label>
+    <select name="etype">
+      <option value="Manager">Manager
+      <option value="Employee">Employee
+  </select>  
+        <button id="submitButton" type="submit" class="Register">Submit</button>    
+        <button id="resetButton" type="reset" class="Reset" style="background-color: white; color:black;">clear</button> 
+    </form>  
+    </body>  
+    </html>  
